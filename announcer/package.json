@@ -1,0 +1,31 @@
+{
+  "name": "accessibility-announcer",
+  "version": "0.0.0",
+  "description": "Web application aria-live announcer component",
+  "author": "Marat Abdullin <marata@microsoft.com>",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/accessibility-announcer.esm.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microsoft/accessibility-announcer"
+  },
+  "scripts": {
+    "build": "npm run tslint && npm run clean && tsdx build",
+    "clean": "rimraf dist",
+    "tslint": "tslint --project tsconfig.json -r tslint.json -r ./node_modules/tslint-microsoft-contrib --fix || true",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "tsdx": "^0.14.0",
+    "tslint": "^6.1.3",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "tsutils": "^3.17.1",
+    "typescript": "^4.0.3"
+  }
+}

@@ -1,3 +1,16 @@
+# Accessibility Announcer
+
+A tool to do aria-live announcements.
+
+## About
+
+*This project is pretty much in a work-in-progress proof-of-concept state. More docs and examples are to come.*
+
+A dynamic web application might require to do screen reader announcements for the state changes. The browsers lack a direct API to ask the screen reader to say something, we only have aria-live regions.
+
+The problem with the announcements using aria-live is that the aria-live node should be present in the DOM and should be accessible by the screen reader navigation which might be confusing. One of the standard practices is to remove the contents of the aria-live element after some timeout hoping that it's already announced. Which is very fragile and unpredictable.
+
+This module does the same announcements using aria-live regions, but it wraps them inside a sematically meaningful container which is navigable and visible by the screen reader only. This container removes the confusion for the screen reader user, it increases predictability of the announcements (because the text is not removed after short timeout). It also provides a convenient access to the recent announcements history.
 
 # Contributing
 

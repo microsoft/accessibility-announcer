@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "bootstrap": "npm run clean && lerna bootstrap --no-ci",
+    "build": "lerna exec -- npm run build",
+    "clean": "lerna exec -- npm run clean && lerna clean --yes"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
