@@ -1,7 +1,7 @@
 {
   "name": "accessibility-announcer-demo",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A demo project for the accessibility-announcer module",
   "author": "Marat Abdullin <marata@microsoft.com>",
   "license": "MIT",
@@ -29,7 +29,7 @@
   "dependencies": {
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
-    "accessibility-announcer": "^0.0.0",
+    "accessibility-announcer": "^0.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   }

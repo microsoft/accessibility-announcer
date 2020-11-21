@@ -1,6 +1,6 @@
 {
   "name": "accessibility-announcer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Web application aria-live announcer component",
   "author": "Marat Abdullin <marata@microsoft.com>",
   "license": "MIT",
