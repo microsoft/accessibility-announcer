@@ -8,7 +8,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 const announcer = new Announcer(window);
-announcer.setup(document.body);
+announcer.setup({ parent: document.body });
 
 class App extends React.PureComponent {
     private _input: HTMLInputElement | undefined;
